@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Build / output
+*.mp4
+*.gif
+*.mkv
+*.webm
+*.avi
+ascii_output*
+frame_*.png
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

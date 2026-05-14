@@ -1,0 +1,8 @@
+opencv-python>=4.5
+numpy>=1.21
+Pillow>=9.0
+
+# Optional
+# yt-dlp>=2023.0
+# rich>=13.0
+# tomli>=2.0  # only needed on Python < 3.11
