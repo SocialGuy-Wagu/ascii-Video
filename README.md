@@ -1,8 +1,14 @@
 # ascii-Video
 
+> ⚠️ **Heads up: this is AI slop.** Most of this code was vibe-coded with an LLM. It works, mostly, but expect rough edges, dead code paths, and questionable architectural choices. Use at your own risk.
+
 A terminal ASCII art video player for Linux.
 
 Play any video file directly in your terminal as live ASCII / Unicode / Braille art, with truecolor support, dithering, subtitles, and MP4 export.
+
+## Demo
+
+https://github.com/SocialGuy-Wagu/ascii-Video/raw/main/demo.mp4
 
 ## Features
 
@@ -47,7 +53,7 @@ python video-ascii.py -v video.mp4 --preset cinematic
 # Webcam
 python video-ascii.py --webcam
 
-# Export to MP4
+# Export to MP4 (see note below — this path is flaky)
 python video-ascii.py -v video.mp4 --export -o out
 
 # Benchmark
@@ -62,6 +68,10 @@ python video-ascii.py -v video.mp4 --benchmark
 | `←` / `→`| Seek ±10s       |
 | `m`      | Toggle mute     |
 | `q`      | Quit            |
+
+## Known issues
+
+- **MP4 export doesn't fully work.** The `--export` pipeline (frame → PIL → ffmpeg stdin) produces output but is inconsistent — frames can desync from audio, colors sometimes render wrong, and the Floyd–Steinberg dithering path is unusably slow during export. Live playback is the supported mode; treat export as experimental.
 
 ## License
 

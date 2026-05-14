@@ -7,12 +7,9 @@ venv/
 env/
 
 # Build / output
-*.mp4
-*.gif
-*.mkv
-*.webm
-*.avi
 ascii_output*
+ascii_output*.mp4
+ascii_output*.gif
 frame_*.png
 
 # Editor / OS
