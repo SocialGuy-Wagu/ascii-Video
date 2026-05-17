@@ -1,6 +1,6 @@
 # ascii-Video
 
-> ⚠️ **AI code.** Most of this code was vibe-coded with an Claude. Mostly works except for the ascii mp4 export option at the end.
+> ⚠️ **AI code.** Most of this code was vibe coded with Claude. Mostly works except for the ascii mp4 export option at the end.
 
 A terminal ASCII art video player for Linux.
 
